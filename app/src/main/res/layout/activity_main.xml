@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/orange"
+    tools:context=".ui.activities.MainActivity">
+
+    <!-- Заголовок категорий -->
+    <TextView
+        android:id="@+id/textViewCategories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/categories_label"
+        android:textSize="50sp"
+        android:textStyle="bold|italic"
+        android:textColor="#F8F8F8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Категория: Sups -->
+    <ImageView
+        android:id="@+id/imageSoups"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/soup"
+        android:scaleType="centerCrop"
+        android:background="@drawable/image_border"
+        android:contentDescription="Soups image"
+        app:layout_constraintTop_toBottomOf="@id/textViewCategories"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+    <Button
+        android:id="@+id/buttonSoups"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:text="@string/soups_label"
+        android:backgroundTint="#FF3E00"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toTopOf="@id/imageSoups"
+        app:layout_constraintBottom_toBottomOf="@id/imageSoups"
+        app:layout_constraintStart_toEndOf="@id/imageSoups"
+        android:layout_marginStart="16dp" />
+
+    <!-- Категория: Salads -->
+    <ImageView
+        android:id="@+id/imageSalads"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/salad"
+        android:scaleType="centerCrop"
+        android:background="@drawable/image_border"
+        android:contentDescription="Salads image"
+        app:layout_constraintTop_toBottomOf="@id/imageSoups"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+    <Button
+        android:id="@+id/buttonSalads"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:text="@string/salads_label"
+        android:backgroundTint="#FF3C00"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toTopOf="@id/imageSalads"
+        app:layout_constraintBottom_toBottomOf="@id/imageSalads"
+        app:layout_constraintStart_toEndOf="@id/imageSalads"
+        android:layout_marginStart="16dp" />
+
+    <!-- Категория: Deserts -->
+    <ImageView
+        android:id="@+id/imageDeserts"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/macarun"
+        android:scaleType="centerCrop"
+        android:background="@drawable/image_border"
+        android:contentDescription="Deserts image"
+        app:layout_constraintTop_toBottomOf="@id/imageSalads"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+    <Button
+        android:id="@+id/buttonDeserts"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:text="@string/deserts_label"
+        android:backgroundTint="#FF3E00"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toTopOf="@id/imageDeserts"
+        app:layout_constraintBottom_toBottomOf="@id/imageDeserts"
+        app:layout_constraintStart_toEndOf="@id/imageDeserts"
+        android:layout_marginStart="16dp" />
+
+    <!-- Категория: Meat -->
+    <ImageView
+        android:id="@+id/imageMeat"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/meat"
+        android:scaleType="centerCrop"
+        android:background="@drawable/image_border"
+        android:contentDescription="Meat image"
+        app:layout_constraintTop_toBottomOf="@id/imageDeserts"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+    <Button
+        android:id="@+id/buttonMeat"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:text="@string/meat_label"
+        android:backgroundTint="#FF3C00"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toTopOf="@id/imageMeat"
+        app:layout_constraintBottom_toBottomOf="@id/imageMeat"
+        app:layout_constraintStart_toEndOf="@id/imageMeat"
+        android:layout_marginStart="16dp" />
+
+    <!-- Категория: Seafood -->
+    <ImageView
+        android:id="@+id/imageSeafood"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/seafood"
+        android:scaleType="centerCrop"
+        android:background="@drawable/image_border"
+        android:contentDescription="Seafood image"
+        app:layout_constraintTop_toBottomOf="@id/imageMeat"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+    <Button
+        android:id="@+id/buttonSeafood"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:text="@string/seafood_label"
+        android:backgroundTint="#FF4100"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toTopOf="@id/imageSeafood"
+        app:layout_constraintBottom_toBottomOf="@id/imageSeafood"
+        app:layout_constraintStart_toEndOf="@id/imageSeafood"
+        android:layout_marginStart="16dp" />
+
+    <ImageView
+        android:id="@+id/buttonFavourites"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="@string/favourite"
+        android:src="@drawable/star_filled"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSoups"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewCategories"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

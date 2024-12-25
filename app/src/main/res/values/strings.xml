@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MyBook</string>
+    <string name="categories_label">Categories</string>
+    <string name="category_icon">Categories</string>
+    <string name="category_name">Category Name</string>
+    <string name="soups_label">Soups</string>
+    <string name="salads_label">Salads</string>
+    <string name="deserts_label">Deserts</string>
+    <string name="meat_label">Meat</string>
+    <string name="seafood_label">Seafood</string>
+    <string name="back_to_main_menu">Back to Main Menu</string>
+    <string name="more_options">More options</string>
+    <string name="back_to_recipes">Back to Recipes</string>
+    <string name="favourite">Favourite</string>
+</resources>
